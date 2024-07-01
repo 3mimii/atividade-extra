@@ -1,61 +1,235 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
+
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="reset.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Games Search</title>
+  <link rel="stylesheet" href="reset.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+  <link rel="stylesheet" href="styles.css">
 </head>
+
 <body>
-<header class="cabeçalho">
-    <div class="container"> 
-     
-    <input type="checkbox" id="menu" class="container__botao">
-    <label for="menu">
-            <span class="cabeçalho__menu-hamburguer container__imagem"></span>
-    </label>
-    
+  <header class="cabeçalho">
+    <div class="container">
+      <input type="checkbox" id="menu" class="container__botao">
+      <label for="menu">
+        <span class="cabeçalho__menu-hamburguer container__imagem"></span>
+      </label>
+      <ul class="lista-menu">
+        <li class="lista-menu__titulo">Menu</li>
+        <li class="lista-menu__item">
+          <a href="#" class="lista-menu__link">cafes</a>
+        </li>
+        <li class="lista-menu__item">
+          <a href="#" class="lista-menu__link">doces</a>
+        </li>
+        <li class="lista-menu__item">
+          <a href="#" class="lista-menu__link">sobre nós</a>
+        </li>
+      </ul>
+      <img src="img/menu.png" alt="Logo da Games search" class="container__imagem">
+      <img src="img/sinal-de-cafeteria.png" alt="Logo da Games search" class="container__imagem">
+    </div>
+    <div class="container">
+      <a href="#"><img src="img/Favoritos (1).svg" alt="Meus favoritos" class="container__imagem"></a>
+      <a href="#"><img src="img/Sacola.png"container__imagem"></a>
+      <a href="#"><img src="img/profile-user.png" alt="Meu perfil" class="container__imagem"></a>
+    </div>
+  </header>
+  <section class="banner">
+    <h2 class="banner__titulo">peça já o seu café</h2>
+    <p class="banner__texto">
+      procure aqui seu preferido!!
+    </p>
+    <input
+      type="search"
+      class="banner__pesquisa"
+      placeholder="Qual será seu pedido?"
+    />
+  </section>
 
-</label>
-<ul class="lista-menu">
-  <li class="lista-menu_titulo">Categorias</li>
-  <li class="lista-menu_item">
-    <a href="#" class="lista-menu_link">Programação</a>
-  </li>
-  <li class="lista-menu_item">
-    <a href="#" class="lista-menu_link">Front-end</a>
-  </li>
-  <li class="lista-menu_item">
-    <a href="#" class="lista-menu_link">Infraestrutura</a>
-  </li>
-  <li class="lista-menu_item">
-    <a href="#" class="lista-menu_link">Business</a>
-  </li>
-  <li class="lista-menu_item">
-    <a href="#" class="lista-menu_link">Design & UX</a>
-  </li>
-</ul>
+  <section class="carrossel">
+    <h2 class="carrossel__titulo">Mais populares</h2>
+    <!-- Slider main container -->
+<div class="swiper">
+  <!-- Additional required wrapper -->
+  <div class="swiper-wrapper">
+    <!-- Slides -->
+    <div class="swiper-slide">
+      <img src="img/doce bolo.jpeg" alt="Jogo Shadows of the Tomb Raider"/>
+    </div>
+    <div class="swiper-slide">
+      <img src="img/doces-cafe-sobremesa .jpg" alt="Jogo Senua's Sacrifice"
+      />
+    </div>
+    <div class="swiper-slide">
+      <img src="img/cafés 1.jpeg" alt="Jogo Senua's Sacrifice 2"
+      />
+    </div>
+    <div class="swiper-slide">
+      <img src="img//cappucino doce.jpg"  alt="Jogo Resident Evil Village"/>
+    </div>
+    <div class="swiper-slide">
+      <img src="img/café-tonisi.jpg" alt="Jogo Horizon Zero Dawn"/>
+    </div>
+    <div class="swiper-slide">
+      <img src="img/panqueca.jpeg" alt="Jogo Detroit Become Human"/>
+    </div>
+  </div>
 
-
-
-
-
-    <span class="cabeçalho__minha container__imagem"></span>
-    <img src="img/Menu.svg" class="container__imagem"></a>
-    <img src="img/sinal-de-cafeteria.png" alt="Logo da AluraBooks"  class="container__imagem">
-   
+  <!-- If we need navigation buttons -->
+  <div class="swiper-button-prev"></div>
+  <div class="swiper-button-next"></div>
 </div>
-<div class="container"> 
-    <a href="#"><img src="img/Favoritos (1).svg"  class="container__imagem"></a>
-    <a href="#"><img src="img/Sacola.png"  class="container__imagem"></a>
-    <a href="#"><img src="img/Usuario.png"  class="container__imagem"></a>
+
+<div class="card">
+  <!-- 1º linha -->
+  <div class="card__descrição">
+    <!-- 1º coluna -->
+    <div class="descrição">
+      <h3 class="descrição__titulo">Talvez você goste de..</h3>
+      <h2 class="descrição__titulo-livro"> macaron frut red </h2>
+      <h4 class="descrição__do-game">Um macaron feito com frutas vermelhas especialmente selecionadas, colidas manualmente,seu recheio é feito com o melhor creme de amora  usada américa latina </h4>
+      <p class="descrição__texto">
+      </p>
+    </div>
+    <!-- 2º coluna -->
+    <img src="img/macaron.jpg" class="descrição__imagem">
+  </div>
+
+  <!-- 2º linha -->
+  <div class="card__botões">
+    <!-- 1º coluna -->
+    <ul class="botões">
+      <li class="botões__item"><img src="img/Sacola.png"  width="30" height="30" alt="Adicionar no carrinho de compras"></li>
+    </ul>
+    <!-- 2º coluna -->
+    <a href="#" class="botões__ancora">Saiba mais</a>
+  </div>
 </div>
-</header>
 
-</header>
+  </section>
 
-    
+  <section class=”carrossel”>
+    <h2 class="carrossel__titulo">Todo mundo ama!</h2>
+    <div class="swiper">
+      <!-- Additional required wrapper -->
+      <!-- If we need pagination -->
+      <div class="swiper-pagination"></div>
+
+      <div class="swiper-wrapper">
+        <!-- Slides -->
+        <div class="swiper-slide"><img src="img/café preto .jpg" alt=""></div>
+
+        <div class="swiper-slide"><img src="img/doce torta.jpeg" alt="">
+        </div>
+        <div class="swiper-slide"><img src="img/doce bolo.jpeg" alt="">
+        </div>
+        <div class="swiper-slide"><img src="img/macaron.jpg" alt=""></div>
+        
+        <div class="swiper-slide"><img src="img/croasan.jpg" alt=""></div>
+
+        <div class="swiper-slide"><img src="img/images.jpeg" alt=""></div>
+      </div>
+
+      <!-- If we need navigation buttons -->
+      <div class="swiper-button-prev"></div>
+      <div class="swiper-button-next"></div>
+    </div>
+
+    <div class="card">
+      <!-- 1º linha -->
+      <div class="card__descrição">
+        <!-- 1º coluna -->
+        <div class="descrição">
+          <h3 class="descrição__titulo">Para os amantes de doces..</h3>
+          <h2 class="descrição__titulo-livro">panc frut </h2>
+          <h4 class="descrição__do-game">panquecas saborosas, explosão de sabores, com um incrediente secreto!
+            venha conferir!!
+
+          </h4>
+          <p class="descrição__texto">
+          </p>
+        </div>
+        <!-- 2º coluna -->
+        <img src="img/panqueca de fruta.jpeg" class="descrição__imagem">
+      </div>
+
+      <!-- 2º linha -->
+      <div class="card__botões">
+        <!-- 1º coluna -->
+        <ul class="botões">
+          <li class="botões__item"><img src="img/Sacola.png"  width="30" height="30" alt="Adicionar no carrinho de compras"></li>
+        </ul>
+        <!-- 2º coluna -->
+        <a href="#" class="botões__ancora">Saiba mais</a>
+      </div>
+    </div>
+
+
+
+  </section>
+
+  <section class="tópicos">
+    <h2 class="tópicos__titulo"> adicionados recentementes</h2>
+    <ul class="tópicos__lista">
+      <li class="tópicos__item"><a href="#" class="tópicos__link">sorvete</a></li>
+      <li class="tópicos__item">
+        <a href="#" class="tópicos__link">sucos</a>
+      </li>
+      <li class="tópicos__item">
+        <a href="#" class="tópicos__link">salgados</a>
+      </li>
+      <li class="tópicos__item">
+        <a href="#" class="tópicos__link">café preto</a>
+      </li>
+      <li class="tópicos__item">
+        <a href="#" class="tópicos__link">croissant de vanila</a>
+      </li>
+      <li class="tópicos__item">
+        <a href="#" class="tópicos__link">mocha gelada</a>
+      </li>
+      <li class="tópicos__item">
+        <a href="#" class="tópicos__link">torta franboesa</a>
+      </li>
+      <li class="tópicos__item">
+        <a href="#" class="tópicos__link">caputino avelã</a>
+      </li>
+    </ul>
+  </section>
+
+  <section class="contato">
+    <h2 class="contato__titulo">Fique por dentro das novidades!</h2>
+    <p class="contato__texto">
+      Atualizações lançamentos e outros.
+    </p>
+    <input type="email" placeholder="Cadastre seu e-mail" class="contato__email" />
+  </section>
+
+  <hr />
+
+  <footer class="rodapé">
+    <h2 class="rodapé__titulo"> cafefe mimi</h2>
+    <img src="img/sinal-de-cafeteria.png"    width="35" height="35">
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+  <script>
+    const swiper = new Swiper(".swiper", {
+      spaceBetween: 10,
+      slidesPerView: 3,
+      pagination: {
+        el: ".swiper-pagination",
+        type: "bullets",
+      },
+    });
+  </script>
+  
 </body>
+
 </html>
