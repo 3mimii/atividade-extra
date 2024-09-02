@@ -20,11 +20,11 @@
   <header class="cabeçalho">
     <div class="container">
       <input type="checkbox" id="menu" class="container__botao">
-      <label for="menu">
+      <label for="menu" class="container__rotulo">
         <span class="cabeçalho__menu-hamburguer container__imagem"></span>
       </label>
       <ul class="lista-menu">
-        <li class="lista-menu__titulo">Menu</li>
+        <li class="lista-menu__titulo">menu</li>
         <li class="lista-menu__item">
           <a href="#" class="lista-menu__link">cafes</a>
         </li>
@@ -32,44 +32,43 @@
           <a href="#" class="lista-menu__link">doces</a>
         </li>
         <li class="lista-menu__item">
-          <a href="#" class="lista-menu__link">Informações</a>
+          <a href="#" class="lista-menu__link">informações</a>
         </li>
         <li class="lista-menu__item">
-          <a href="#" class="lista-menu__link">Sobre nós</a>
+          <a href="#" class="lista-menu__link">sobre nós</a>
         </li>
       </ul>
-      <img src="img/menu.png" alt="Logo da Games search" class="container__imagem">
-      <img src="img/sinal-de-cafeteria.png" alt="Logo da Games search" class="container__imagem">
-      <h1 class="container__titulo">
-        <b class="container__titulo--negrito">mi</b>coffe
-      </h1>   
-      
+      <img src="img/sinal-de-cafeteria.png" alt="Logo da Alurabooks" class="container__imagem">
+      <h1 class="container__titulo"><b class="container__titulo--negrito">mi</b>cofee</h1>
+
       <ul class="opções">
         <input type="checkbox" id="opções-menu" class="opções__botão" />
-        <label for="opções-menu">
+        <label for="opções-menu" class="opções__rotulo">
           <li class="opções__item">Categorias</li>
         </label>
 
         <ul class="lista-menu">
           <li class="lista-menu__item">
-            <a href="#" class="lista-menu__link">promoção</a>
+            <a href="#" class="lista-menu__link">bolos</a>
           </li>
           <li class="lista-menu__item">
-            <a href="#" class="lista-menu__link">servisos</a>
+            <a href="#" class="lista-menu__link">salgados</a>
           </li>
           <li class="lista-menu__item">
-            <a href="#" class="lista-menu__link">contato</a>
+            <a href="#" class="lista-menu__link">cafes</a>
           </li>
           <li class="lista-menu__item">
-            <a href="#" class="lista-menu__link">Descontos</a>
+            <a href="#" class="lista-menu__link">sorvetes</a>
+          </li>
+          <li class="lista-menu__item">
+            <a href="#" class="lista-menu__link">doces</a>
           </li>
         </ul>
         <li class="opções__item"><a href="#" class="opções__link">Favoritos</a></li>
-        <li class="opções__item"><a href="#" class="opções__link">categorias</a></li>
+        <li class="opções__item"><a href="#" class="opções__link">sobre nós</a></li>
       </ul>
 
     </div>
-    
     <div class="container">
       <a href="#"><img src="img/search.png" alt="Meus favoritos" class="container__imagem container__imagem-transparente"></a>
       <a href="#" class="container__link"><img src="img/cart.png" alt="Carrinhos de compras" class="container__imagem"></a>
@@ -150,37 +149,39 @@
 </div>
 
   </section>
+  <section class="carrossel">
+    <h2 class="carrossel__titulo">Novos lançamentos</h2>
 
-  <section class=”carrossel”>
-    <h2 class="carrossel__titulo">Todo mundo ama!</h2>
-    <div class="swiper">
-      <!-- Additional required wrapper -->
-      <!-- If we need pagination -->
-      <div class="swiper-pagination"></div>
+    <div class="carrossel__container">
+      <!-- Slider main container -->
+      <div class="swiper">
 
-      <div class="swiper-wrapper">
+        <div class="swiper-pagination"></div>
+        <!-- Additional required wrapper -->
+        <div class="swiper-wrapper">
+          <!-- Slides -->
+          <div class="swiper-slide"><img src="img/doce torta.jpeg"
+              alt="Livro sobre apache kafka e spring boot da alura books"></div>
+          <div class="swiper-slide"><img src="img/croasan.jpg"
+              alt="Livro sobre liderança em design design da alura books"></div>
+          <div class="swiper-slide"><img src="img/doce bolo.jpeg" alt="Livro sobre javascript assertivo da alura books">
+          </div>
+          <div class="swiper-slide">
+            <img src="img/café preto .jpg" alt="Livro Guia front end" />
+          </div>
+          <div class="swiper-slide">
+            <img src="img/doce torta.jpeg" alt="Livro sobre portugol" />
+          </div>
+          <div class="swiper-slide">
+            <img src="img/doces-cafe-sobremesa .jpg" alt="Livro sobre acessibilidade" />
+          </div>
+        </div>
+
+        <!-- If we need navigation buttons -->
+        <div class="swiper-button-prev"></div>
+        <div class="swiper-button-next"></div>
+
       </div>
-      <img src="img/café preto .jpg" class="descrição__imagem" />
-    </div>
-    <div class="card__botões">
-      <ul class="botões">
-        <li class="botões__item">
-          <img src="img/doce torta.jpeg" alt="Favoritar livro" />
-        </li>
-        <li class="botões__item">
-          <img src="img/doce bolo.jpeg" alt="Adicionar no carrinho de compras" />
-        </li>
-      </ul>
-      <a href="#" class="botões__ancora">Saiba mais</a>
-    </div>
-  </div>
-</div>
-
-</section>
-
-      <div class="swiper-button-prev"></div>
-      <div class="swiper-button-next"></div>
-    </div>
 
     <div class="card">
       <!-- 1º linha -->
@@ -249,48 +250,25 @@
     <input type="email" placeholder="Cadastre seu e-mail" class="contato__email" />
   </section>
 
-  <hr />
-
   <footer class="rodapé">
-    <h2 class="rodapé__titulo">Games Search</h2>
-    <img src="img/logo.png"    width="35" height="35">
+    <h2 class="rodapé__titulo">rede social </h2>
     <ul class="lista-rodapé">
-      <li class="lista-rodapé__titulo">Redes Sociais</li>
-      <li class="lista-rodapé__item">
-        <img src="img/Youtube_logo.png" alt="YouTube" width="45" height="35"/>
-        <a href="#" class="lista-rodapé__link">Games Search</a>
       </li>
       <li class="lista-rodapé__item">
-        <img src="img/Instagram_icon.png.webp" alt="Instagram" width="45" height="45" />
-        <a href="#" class="lista-rodapé__link">@Games_search</a>
+        <img src="img/whatsapp.png" style="  width: 25px;
+        height: 25px;"
+        alt="998764975" />
+        <a href="#" class="lista-rodapé__link">998764975</a>
       </li>
       <li class="lista-rodapé__item">
-        <img src="img/twitch-logo.png.webp" alt="Twitch" width="65" height="65"/>
-        <a href="#" class="lista-rodapé__link">Games Search</a>
-      </li>
-    </ul>
-
-    <ul class="lista-rodapé">
-      <li class="lista-rodapé__titulo">Plataformas</li>
-      <li class="lista-rodapé__item">
-        <img src="img/Steam_Logo.png" alt="Steam" width="35" height="35"/>
-        <a href="#" class="lista-rodapé__link">Steam</a>
+        <img src="img/instagram.png" style="  width: 25px;
+        height: 25px;" alt="@mimicofe" />
+        <a href="#" class="lista-rodapé__link">@mimicofe</a>
       </li>
       <li class="lista-rodapé__item">
-        <img src="img/Epic_Games_logo.png" alt="Epic games" width="35" height="35"/>
-        <a href="#" class="lista-rodapé__link">Epic Games</a>
-      </li>
-      <li class="lista-rodapé__item">
-        <img src="img/EA-logo.png" alt="EA" width="65" height="45"/>
-        <a href="#" class="lista-rodapé__link">EA</a>
-      </li>
-      <li class="lista-rodapé__item">
-        <img src="img/Xbox.png" alt="Xbox" width="35" height="35"/>
-        <a href="#" class="lista-rodapé__link">Xbox</a>
-      </li>
-      <li class="lista-rodapé__item">
-        <img src="img/ps.com.png" alt="Ps" width="35" height="35"/>
-        <a href="#" class="lista-rodapé__link">Ps</a>
+        <img src="img/tik-tok.png" style="  width: 25px;
+        height: 25px;" alt="@mimicofe" />
+        <a href="#" class="lista-rodapé__link">@mimicofe</a>
       </li>
     </ul>
   </footer>
@@ -301,12 +279,11 @@
       spaceBetween: 10,
       slidesPerView: 3,
       pagination: {
-        el: ".swiper-pagination",
-        type: "bullets",
+        el: '.swiper-pagination',
+        type: 'bullets',
       },
     });
   </script>
-  
 </body>
 
 </html>
